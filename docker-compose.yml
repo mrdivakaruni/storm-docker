@@ -1,10 +1,10 @@
 zookeeper:
-  image: bala/zookeeper
+  image: mrdivakaruni/zookeeper
   ports: 
     - "49181:2181"
     - "22"
 nimbus:
-  image: bala/storm-nimbus
+  image: mrdivakaruni/storm-nimbus
   ports:
     - "49773:3773"
     - "49772:3772"
@@ -13,7 +13,7 @@ nimbus:
   links: 
     - zookeeper:zk
 supervisor:
-  image: bala/storm-supervisor
+  image: mrdivakaruni/storm-supervisor
   ports:
     - "8000"
     - "22"
@@ -21,7 +21,7 @@ supervisor:
     - nimbus:nimbus
     - zookeeper:zk
 ui:
-  image: bala/storm-ui
+  image: mrdivakaruni/storm-ui
   ports:
     - "49080:8080"
     - "22"
