@@ -1,5 +1,5 @@
-FROM wurstmeister/storm:0.9.4
-MAINTAINER Wurstmeister
+FROM bala/storm
+MAINTAINER "Bala Divakaruni" <bala.divakaruni@here.com>
 
 EXPOSE 6700
 EXPOSE 6701
