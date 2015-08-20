@@ -1,7 +1,8 @@
 storm-docker
 ============
 
-Dockerfiles for building a storm cluster. Inspired by [https://github.com/ptgoetz/storm-vagrant](https://github.com/ptgoetz/storm-vagrant)
+Dockerfiles for building a storm cluster in Cent OS 6 and Storm 0.9.3. Inspired by [https://github.com/ptgoetz/storm-vagrant](https://github.com/ptgoetz/storm-vagrant)
+,[https://github.com/wurstmeister/storm-docker](https://github.com/wurstmeister/storm-docker)
 
 The images are available directly from [https://index.docker.io](https://index.docker.io)
 
@@ -32,7 +33,7 @@ Add more supervisors:
 Take a look at docker-compose.yml:
 
     ui:
-      image: wurstmeister/storm-ui:0.9.2
+      image: mrdivakaruni/storm-ui
 	      ports:
 	        - "49080:8080"
 
@@ -65,4 +66,4 @@ Find the forwarded ssh port for the container you wish to connect to (use `docke
 
     $ ssh root@`boot2docker ip` -p $CONTAINER_PORT
 
-The password is 'wurstmeister' (from: https://registry.hub.docker.com/u/wurstmeister/base/dockerfile/).
+The password is 'password' (from: https://registry.hub.docker.com/u/mrdivakaruni/base/dockerfile/).

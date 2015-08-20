@@ -1,4 +1,4 @@
-FROM bala/base
+FROM mrdivakaruni/base
 MAINTAINER "Bala Divakaruni" <bala.divakaruni@here.com>
 
 RUN yum update -y && yum install -y unzip

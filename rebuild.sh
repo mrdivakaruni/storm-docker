@@ -1,8 +1,8 @@
 #!/bin/bash
 
-docker build -t="bala/base" base
-docker build -t="bala/zookeeper" zookeeper
-docker build -t="bala/storm" storm
-docker build -t="bala/storm-nimbus" storm-nimbus
-docker build -t="bala/storm-supervisor" storm-supervisor
-docker build -t="bala/storm-ui" storm-ui
+docker build -t="mrdivakaruni/base" base
+docker build -t="mrdivakaruni/zookeeper" zookeeper
+docker build -t="mrdivakaruni/storm" storm
+docker build -t="mrdivakaruni/storm-nimbus" storm-nimbus
+docker build -t="mrdivakaruni/storm-supervisor" storm-supervisor
+docker build -t="mrdivakaruni/storm-ui" storm-ui
